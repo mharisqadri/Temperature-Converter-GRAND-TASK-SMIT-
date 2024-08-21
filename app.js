@@ -21,8 +21,10 @@ function tempConverter() {
     }
     else { result = inputVal }
 
-    OutputContainer.innerHTML = `The Temperature is ${result} &deg`
-
+    OutputContainer.innerHTML = `The Temperature is ${result} &deg;
+    ${convertTemp.value === "celsius"? "C" :
+    convertTemp.value === "fahrenheit"?  "F" :
+    convertTemp.value === "kelvin"? "K":"" }`
 }
 
 
