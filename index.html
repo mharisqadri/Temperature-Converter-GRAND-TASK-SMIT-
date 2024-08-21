@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+    <h1>Temperature Converter</h1>
+    <!-- <form action="">  is tag se enter press karne par page reload ho raha he sir se poochna he Q? -->
+        <label for="">Enter Temperature:</label>
+        <input type="number" value="0" name="temp-input" class="temp-input">
+        <br/><br/>
+        <label for="">
+            Convert From:
+        <select name="temp-units-input" class="temp-units-input">
+            <option value="celsius">Celsius</option>
+            <option value="fahrenheit">Fahrenheit </option>
+            <option value="kelvin">Kelvin</option>
+        </select>
+        <br/><br/>
+        <label for="">
+            Convert To:
+        <select name="temp-units-output" class="temp-units-output">
+            <option value="celsius">Celsius</option>
+            <option value="fahrenheit">Fahrenheit </option>
+            <option value="kelvin">Kelvin</option>
+        </select>
+    </label>
+    <br/><br/>
+    <!-- </form> -->
+    <button onclick="tempConverter()">Convert</button>
+    <br/>
+    <br/>
+    <div class="output-container"></div>
+</div>
+    <script src="app.js"></script>
+</body>
+</html>
